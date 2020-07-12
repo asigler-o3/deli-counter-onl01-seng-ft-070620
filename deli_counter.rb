@@ -13,7 +13,7 @@ end
 def take_a_number(katz_deli,name)
    katz_deli.count > 1
    say = []
-   katz_deli.push(name)
+   katz_deli << name
    katz_deli.each_with_index {|val, index| say << "Welcome, #{val}. You are number #{index+1} in line."}
    puts say.join","
 end
@@ -22,7 +22,7 @@ def now_serving(katz_deli)
   if katz_deli.count > 1
     say = []
     name = katz_deli.shift
-    say << "Currently serving #{name}."
+    say << "Currently serving #{nam}."
     puts say.join
   else
     puts "There is nobody waiting to be served!"

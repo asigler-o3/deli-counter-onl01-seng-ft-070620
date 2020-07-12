@@ -13,7 +13,7 @@ end
 def take_a_number(katz_deli,name)
    katz_deli.count > 1
    say = []
-   katz_deli << name
+   katz_deli.push(name)
    katz_deli.each_with_index {|val, index| say << "Welcome, #{val}. You are number #{index+1} in line."}
    puts say.join","
 end

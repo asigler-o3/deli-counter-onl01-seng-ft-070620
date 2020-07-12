@@ -11,12 +11,9 @@ def line (katz_deli)
 end
 
 def take_a_number(katz_deli,name)
-   katz_deli.count > 1
-   say = ""
-   katz_deli << name
-   katz_deli.each_with_index {|val, index| say << "Welcome, #{val}. You are number #{index+1} in line."}
-   puts say
-end
+ katz_deli << name
+ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end 
 
 def now_serving(katz_deli)
   if katz_deli.count > 1

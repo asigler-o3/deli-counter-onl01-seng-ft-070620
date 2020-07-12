@@ -16,7 +16,6 @@ def take_a_number(katz_deli,name)
    katz_deli << name
    katz_deli.each_with_index {|val, index| say << "Welcome, #{val}. You are number #{index+1} in line."}
    puts say.join","
-end
    puts katz_deli << line(katz_deli)
 end
 

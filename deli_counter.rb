@@ -21,7 +21,7 @@ end
 def now_serving(katz_deli)
   if katz_deli.count > 1
     say = []
-    
+    name = katz_deli.shift
     say << "Currently serving #{val}."
     puts say.join
   else

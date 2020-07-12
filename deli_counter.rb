@@ -10,10 +10,9 @@ def line (katz_deli)
  end
 end
 
-def take_a_number(katz_deli)
+def take_a_number(katz_deli,name)
    katz_deli.count > 1
    say = []
-   name = katz_deli.shift
    katz_deli << name
    katz_deli.each_with_index {|val, index| say << "Welcome, #{val}. You are number #{index+1} in line."}
    puts say.join","
